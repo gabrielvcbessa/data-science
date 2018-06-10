@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     step = 3
 
-    for i in range(0, len(boundary_lines), step):
+    for i in range(5, len(boundary_lines), step):
         intercept, slope = boundary_lines[i]
         y_vals = intercept[0] * x_vals + slope[0]
         plot = 'k-' if i + step >= len(boundary_lines) else 'g--'
